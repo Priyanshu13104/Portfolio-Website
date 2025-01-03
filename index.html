@@ -14,6 +14,22 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script>
+      window._CHAT_CONFIG_ = {
+        apiKey: '${process.env.NEXT_PUBLIC_CHAT_API_KEY || ""}',
+        theme: {
+          primary: '#2563eb',
+          secondary: '#ffffff',
+          text: '#1f2937',
+          bubble: '#2563eb'
+        },
+        position: 'bottom-right',
+        title: 'Chat with us',
+        placeholder: 'Type your message...'
+      };
+    </script>
+    <script src="https://chatbot-saas-5fj1v5xa7-archanrds-projects.vercel.app/widget/chatbot.js" async ></script>
+    <script src="https://chatbot-saas-5fj1v5xa7-archanrds-projects.vercel.app/widget/chat-init.js" async ></script>
   </head>
   <body class="bg-white">
     <!-- Header Section -->
